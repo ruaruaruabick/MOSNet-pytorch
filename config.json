@@ -1,0 +1,24 @@
+{
+    "train_config": {
+        "fp16_run": true,
+        "output_directory": "./output",
+        "epochs": 100,
+        "learning_rate": 1e-4,
+        "batch_size": 64,
+        "seed": 1984,
+        "checkpoint_path": "",
+        "with_tensorboard": true,
+        "earlystopping":5
+        
+    },
+    "loaddata_config":{
+        "num_train":13580,
+        "num_test":4000,
+        "num_valid":3000,
+        "bin_root": "./data/bin/",
+        "data_dir":"./data",
+        "fft_size":512,
+        "max_timestep":521
+    }
+    
+}
